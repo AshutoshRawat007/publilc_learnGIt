@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Newspaper Layout Effects</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    .content {
+      column-count: 2;
+      column-gap: 40px;
+    }
+    
+    .column {
+      break-inside: avoid;
+      margin-bottom: 30px;
+    }
+    
+    h2 {
+      font-size: 24px;
+      margin-top: 0;
+    }
+    
+    p {
+      margin-bottom: 10px;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>Newspaper Layout Effects</h1>
+    </header>
+    
+    <div class="content">
+      <div class="column">
+        <h2>Column 1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt metus id erat eleifend, a ultricies mauris pulvinar. Proin auctor, arcu ac bibendum feugiat, nibh neque consectetur eros, nec vestibulum magna enim eu enim.</p>
+        <p>Nullam fermentum eleifend elit, at cursus enim cursus et. Mauris bibendum elementum libero eget rutrum. Nam ut erat vestibulum, laoreet dolor vitae, dignissim mauris. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+      </div>
+      
+      <div class="column">
+        <h2>Column 2</h2>
+        <p>Maecenas hendrerit nibh vel magna semper, in efficitur lectus dignissim. In non tincidunt dui, sit amet eleifend mauris. Nulla facilisi. Donec dapibus felis sed erat vehicula, nec blandit mi congue. Morbi id tellus justo.</p>
+        <p>Aliquam erat volutpat. Fusce eget mauris dignissim, rhoncus dui sed, iaculis urna. Phasellus vitae bibendum dolor. Nam et fermentum lorem, sed semper lacus. Aenean et dui vel neque faucibus iaculis.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
